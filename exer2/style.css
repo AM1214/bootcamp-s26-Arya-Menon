@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f3f5;
+color: #222;
+padding: 40px 20px;
+}
+
+.profile-card {
+width: 600px;
+max-width: 100%;
+margin: auto;
+background-color: white;
+padding: 40px;
+border-radius: 20px;
+border-top: 7px solid #b3a369;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+text-align: center;
+}
+
+.profile-image {
+width: 130px;
+height: 130px;
+border-radius: 50%;
+border: 4px solid #b3a369;
+object-fit: cover;
+}
+
+.eyebrow,
+.section-label {
+color: #b3a369;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+h1 {
+color: #003057;
+font-size: 40px;
+margin: 10px 0;
+}
+
+.subtitle {
+color: #555;
+}
+
+.location {
+color: #777;
+margin-top: 8px;
+}
+
+.passion-section {
+margin-top: 35px;
+padding: 20px;
+background-color: #f7f8f9;
+border-left: 4px solid #b3a369;
+border-radius: 10px;
+}
+
+h2 {
+color: #003057;
+margin: 8px 0;
+}
+
+p {
+line-height: 1.6;
+}
+
+/* Timeline */
+.timeline-section {
+margin-top: 40px;
+}
+
+.timeline {
+margin-top: 20px;
+}
+
+.timeline-item {
+margin-bottom: 15px;
+}
+
+.timeline-button {
+width: 100%;
+padding: 18px;
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 10px;
+text-align: left;
+cursor: pointer;
+}
+
+.timeline-year {
+display: block;
+color: #b3a369;
+font-size: 12px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.timeline-title {
+color: #003057;
+font-size: 18px;
+font-weight: bold;
+}
+
+.timeline-content {
+display: none;
+padding: 15px;
+color: #555;
+}
+
+.timeline-item.active .timeline-content {
+display: block;
+}
