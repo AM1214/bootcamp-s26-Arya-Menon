@@ -45,6 +45,10 @@ h3{
     background-color: gray;
     padding: 10px;
     margin: 20px;
-    width: 40%;
+    width: 70%;
     border-radius: 15px;
+}
+.Sloth_img{
+    width: 200px;
+    height: 200px;
 }
