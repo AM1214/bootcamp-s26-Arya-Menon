@@ -5,8 +5,11 @@ const options = {
   }
 }
 document.addEventListener('click', event => {
-	if (event.target.id === 'button') {
-		fetch('https://icanhazdadjoke.com/', options)
+	if (event.target.classList.contains('button')) {
+        var term = event.target.id;
+        var url = 'https://icanhazdadjoke.com/search?term='+term;
+        console.log(url);
+		fetch(url, options)
 	.then(response => {
 		return response.json()
 	})
@@ -14,7 +17,9 @@ document.addEventListener('click', event => {
 		console.log(responseAsJson)
         var jokeList = document.getElementsByClassName("joke");
         var joke = jokeList[0];
-        joke.innerText = responseAsJson.joke;
+        var jokeArray = responseAsJson.results;
+        var randJoke = jokeArray[Math.floor(Math.random() * jokeArray.length)];
+        joke.innerText = randJoke.joke;
 	})
 	.catch(error => {
 		console.error(error)
